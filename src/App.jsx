@@ -3,7 +3,15 @@ import {Header, Contact, Footer, About, Experience, Testimonials, Nav, Portofoli
 const App = () => {
   return (
     <>
-      <Header/>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portofolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </>
   )
 }
