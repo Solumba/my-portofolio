@@ -1,7 +1,7 @@
 import React from 'react'
-import {BsLinkedin, AiFillGithub, AiFillBehanceCircle} from 'react-icons/bs';
-import {BsLinkedin, AiFillGithub, AiFillBehanceCircle} from 'react-icons/bs';
-import {BsLinkedin, AiFillGithub, AiFillBehanceCircle} from 'react-icons/bs';
+import {BsLinkedin} from 'react-icons/bs';
+import {AiFillGithub} from 'react-icons/ai';
+import {AiFillBehanceCircle} from 'react-icons/ai';
 const HeaderSocialLinks = () => {
   return (
     <div className='header__socials'>
