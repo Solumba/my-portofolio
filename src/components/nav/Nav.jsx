@@ -1,8 +1,15 @@
-import React from 'react'
-import './nav.css'
+import React from 'react';
+import './nav.css';
+import {AiOutlineHome, AiOutlineUser, BiBook, MdHomeRepairService, BsMessenger} from '../IconExports';
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <nav>
+      <a href="#"><AiOutlineHome /></a>
+      <a href="#about"><AiOutlineUser /></a>
+      <a href="#experience"><BiBook /></a>
+      <a href="#services"><MdHomeRepairService /></a>
+      <a href="#contact"><BsMessenger /></a>
+    </nav>
   )
 }
 

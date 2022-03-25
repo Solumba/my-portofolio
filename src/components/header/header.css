@@ -17,6 +17,12 @@ header {
     justify-content: center;
 }
 
+.download__icon {
+    position: relative;
+    top: 0.2rem;
+    left: 0.3rem;
+}
+
 .header__socials {
     display: flex;
     flex-direction: column;
@@ -39,9 +45,38 @@ header {
     width: 22rem;
     height: 30rem;
     position: absolute;
+    /*perfectly center an item according to its designated withd*/
     left: calc(50% - 11rem);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+/*Media Queries Tablets*/
+@media  screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+
+    }
+}
+
+/*Media Queries Mobile*/
+@media  screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+
+    }
+
+    .header__socials, .scroll__down {
+        display: none;
+    }
 }

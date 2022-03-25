@@ -1,23 +1,24 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/me.jpg';
+import ME from '../../assets/me_2.png';
+import {BsArrowDownSquareFill} from 'react-icons/bs';
 import HeaderSocialLinks from './HeaderSocialLinks';
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hi I'm</h5>
+        <h4>Hello! I'm</h4>
         <h1>Solomon Olumba</h1>
-        <h5 className="text-light">Frontend Developer</h5>
+        <h5 className="text-light">Frontend Developer (React JS)</h5>
         <CTA />
         <HeaderSocialLinks />
         <div className="me">
           <img src={ME} alt="Me" />
         </div>
 
-        <a href="#contact" className='scroll_down'>Scroll Down</a> 
+        <a href="#contact" className='scroll__down'><BsArrowDownSquareFill /></a> 
       </div>
     </header>
   )
