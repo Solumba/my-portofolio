@@ -3,3 +3,7 @@ export {AiOutlineUser} from 'react-icons/ai';
 export {BiBook} from 'react-icons/bi';
 export {MdHomeRepairService} from 'react-icons/md';
 export {BsMessenger} from 'react-icons/bs';
+export {BsFillAwardFill} from 'react-icons/bs';
+export {RiUserSmileLine} from 'react-icons/ri';
+export {BsFolderPlus} from 'react-icons/bs';
+export {AiOutlineMessage} from 'react-icons/ai';
