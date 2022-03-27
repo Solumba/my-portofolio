@@ -36,7 +36,7 @@ const About = () => {
             </article>
           </div>
           <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum laboriosam expedita. Non iusto quam corrupti unde facilis vero neque iste nihil, dolor provident, cupiditate illo facere cumque quasi est.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, vero atque. Laboriosam vero quidem laudantium doloribus consequatur provident nulla in est tempore blanditiis repudiandae ea, vel, quaerat at voluptatum consequuntur.
           </p>
 
           <a href="#contact" className="btn btn-primary">
