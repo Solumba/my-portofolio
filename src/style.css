@@ -2,6 +2,7 @@
 
 
 /*setting basic colors with css variables*/
+
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
@@ -63,7 +64,13 @@ section {
     height: 100vh;
 }
 
-section > h2, section > h5 {
+section > h2, 
+section > h5 {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+section > h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }

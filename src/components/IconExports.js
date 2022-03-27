@@ -6,4 +6,4 @@ export {BsMessenger} from 'react-icons/bs';
 export {BsFillAwardFill} from 'react-icons/bs';
 export {RiUserSmileLine} from 'react-icons/ri';
 export {BsFolderPlus} from 'react-icons/bs';
-export {AiOutlineMessage} from 'react-icons/ai';
+export {MdMessage} from 'react-icons/md';
