@@ -8,3 +8,4 @@ export {RiUserSmileLine} from 'react-icons/ri';
 export {BsFolderPlus} from 'react-icons/bs';
 export {MdMessage} from 'react-icons/md';
 export {BsPatchCheckFill} from 'react-icons/bs';
+export {BiCheck} from 'react-icons/bi';

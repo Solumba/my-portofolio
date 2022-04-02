@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import ME from '../../assets/me.jpg';
+import ME from '../../assets/cover.png';
 import {BsFillAwardFill, RiUserSmileLine, BsFolderPlus, MdMessage} from '../../components/IconExports';
 const About = () => {
   return (

@@ -11,7 +11,7 @@
     background: linear-gradient(
         45deg,
         transparent,
-        var(--color-primary),
+        var(--color-bg-variant),
         transparent
     );
     display: grid;
@@ -21,7 +21,7 @@
 .about__me-image {
     border-radius: 2rem;
     overflow: hidden;
-    transform: rotate(10deg);
+    /* transform: rotate(10deg); */
     transition: var(--transition);
     height: 100%;
 }
@@ -37,7 +37,7 @@
 }
 
 .about__card {
-    background: var(--color-primary);
+    background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
