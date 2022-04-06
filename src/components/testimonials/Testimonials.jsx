@@ -4,14 +4,29 @@ import Avatar1 from '../../assets/avatar1.jpg';
 import Avatar2 from '../../assets/avatar2.jpg';
 import Avatar3 from '../../assets/avatar3.jpg';
 import Avatar4 from '../../assets/avatar4.jpg';
+
+// import required modules
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 const Testimonials = () => {
   return (
     <section id='testimonials'>
       <h5>Client Review</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
-        <article className="testimonial">
+      <Swiper 
+        className="container testimonials__container"
+        modules={[Pagination]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }} >
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={Avatar1} alt="client image" />
           </div>
@@ -20,8 +35,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus architecto ea harum ratione quae! Explicabo, delectus nihil iste sequi expedita, 
             animi vero, illo dolorum possimus at modi quibusdam perspiciatis.
           </small>
-        </article>
-        <article className="testimonial">
+        </SwiperSlide>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={Avatar3} alt="client image" />
           </div>
@@ -30,8 +45,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus architecto ea harum ratione quae! Explicabo, delectus nihil iste sequi expedita, 
             animi vero, illo dolorum possimus at modi quibusdam perspiciatis.
           </small>
-        </article>
-        <article className="testimonial">
+        </SwiperSlide>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={Avatar2} alt="client image" />
           </div>
@@ -40,8 +55,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus architecto ea harum ratione quae! Explicabo, delectus nihil iste sequi expedita, 
             animi vero, illo dolorum possimus at modi quibusdam perspiciatis.
           </small>
-        </article>
-        <article className="testimonial">
+        </SwiperSlide>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={Avatar4} alt="client image" />
           </div>
@@ -50,8 +65,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus architecto ea harum ratione quae! Explicabo, delectus nihil iste sequi expedita, 
             animi vero, illo dolorum possimus at modi quibusdam perspiciatis.
           </small>
-        </article>
-      </div>
+        </SwiperSlide>
+      </Swiper>
     </section>
   )
 }
