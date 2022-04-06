@@ -39,8 +39,8 @@ const About = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, vero atque. Laboriosam vero quidem laudantium doloribus consequatur provident nulla in est tempore blanditiis repudiandae ea, vel, quaerat at voluptatum consequuntur.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk <MdMessage className='lets__talk'/>
+          <a href="#contact" className="btn">
+            Let's Talk
           </a>
         </div>
       </div>

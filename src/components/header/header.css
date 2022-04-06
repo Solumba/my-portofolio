@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
+    /*overflow: hidden; */
 }
 
 .header__container {
@@ -41,9 +41,16 @@ header {
 }
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
+    /* background: linear-gradient(var(--color-primary), transparent); */
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-bg-variant),
+        transparent
+    );
+    
     width: 22rem;
-    height: 30rem;
+    height: 27rem;
     position: absolute;
     /*perfectly center an item according to its designated withd*/
     left: calc(50% - 11rem);
@@ -70,6 +77,10 @@ header {
         height: 68vh;
 
     }
+
+    .me {
+        height: 30rem;
+    }
 }
 
 /*Media Queries Mobile*/
@@ -77,6 +88,10 @@ header {
     header {
         height: 100vh;
 
+    }
+    
+    .me {
+        height: 30rem;
     }
 
     .header__socials, .scroll__down {

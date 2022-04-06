@@ -55,7 +55,7 @@
 }
 
 .about__icon {
-    color: var(--color-bg-variant);
+    color: var(--color-primary-variant);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -72,10 +72,6 @@
     margin: 2rem 0 2.6rem;
 }
 
-.lets__talk {
-    position: relative;
-    top: 0.2rem;
-}
 
 /*Media Queries Tablets*/
 @media  screen and (max-width: 1024px) {
