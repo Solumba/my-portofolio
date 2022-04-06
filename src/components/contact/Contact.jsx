@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.css';
 import {HiOutlineMail, BsMessenger, ImWhatsapp} from '../../components/IconExports';
+import emailjs from '@emailjs/browser';
 
-const contact = () => {
+const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_gbj47oc', 'template_m71jjf7', form.current, 'TyjLiTQUvhvpEtW6J')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset();
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -30,15 +46,21 @@ const contact = () => {
           </article>
         </div>
 
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="John Doe" required/>
+          <select name="subject">
+            <option value="Graphic Design">logo design</option>
+            <option value="Web Development">web development</option>
+            <option value="Content Editing">content editing</option>
+          </select>
           <input type="email" name="email" placeholder="example@gmail.com" required/>
           <textarea name="message" rows="7" placeholder='your message' required></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
+          <span className="sent">message sent</span>
         </form>
       </div>
     </section>
   )
 }
 
-export default contact
+export default Contact;
